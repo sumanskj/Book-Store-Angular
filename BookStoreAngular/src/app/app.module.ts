@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 
@@ -22,7 +23,8 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
