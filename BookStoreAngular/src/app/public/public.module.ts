@@ -5,6 +5,8 @@ import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
 import { AllBookComponent } from './components/all-book/all-book.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
   ],
   imports: [
     CommonModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class PublicModule { }

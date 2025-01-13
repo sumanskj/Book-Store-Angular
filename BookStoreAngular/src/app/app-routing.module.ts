@@ -9,7 +9,7 @@ import { PublicComponent } from './public/public.component';
 
 // const routes: Routes = []
 const routes: Routes = [
-  { path: '', redirectTo: 'auth/signup', pathMatch: 'full' },
+  { path: '', redirectTo: 'public/all-book', pathMatch: 'full' },
   { path: 'about-us', component: AppComponent },
   { path: 'auth', component: AuthComponent, loadChildren: () => import('./auth/auth.module').then(x => x.AuthModule) },
   { path: 'public', component: PublicComponent, loadChildren: () => import('./public/public.module').then(x => x.PublicModule) },

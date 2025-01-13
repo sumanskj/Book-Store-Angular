@@ -1,38 +1,33 @@
-<header class="p-3 text-bg-dark">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-      </a>
+<!-- <mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Book Store</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-      </ul>
-
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-      </form>
-
-      <div class="text-end">
-        <button type="button" class="btn btn-outline-light me-2">Login</button>
-        <button type="button" class="btn btn-warning">Sign-up</button>
-      </div>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    Drawer content
+    <div>
+      <a routerLink="/about-us">About Us</a><br>
+      <a routerLink="/auth/signup">SignUp</a><br>
+      <a routerLink="/auth/login" [queryParams]="{Name:userName,Email:email}">Login</a><br>
+      <a routerLink="/public/all-book">All Books</a><br>
     </div>
-  </div>
-</header>
-<div>
-  <a routerLink="/about-us">About Us</a>
-  <a routerLink="/auth/signup">SignUp</a>
-  <a routerLink="/auth/login" [queryParams]="{Name:userName,Email:email}">Login</a>
-  <a routerLink="/public/all-book">All Books</a>
-</div>
+  </mat-drawer>
+  <mat-drawer-content>
+    Main content
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container> -->
 
+<!-- <app-public></app-public> -->
+<app-toolbar></app-toolbar>
 <router-outlet></router-outlet>
-
-<!-- <div>
-  <h2>Footer</h2>
-</div> -->
